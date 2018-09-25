@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.5/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element scope="locale" required="true">
+            <name>tracking_code</name>
+            <label lang="de">Datatrics Project ID</label>
+            <label lang="en">Datatrics Project ID</label>
+            <description lang="de">Sie finden Ihre Datatrics-Projekt-ID auf der Seite "Projekteinstellungen" in der Datatrics-App.</description>
+            <description lang="en">You can find your Datatrics Project ID on your Project Settings page in the Datatrics App.</description>
+        </element>
+
+        <element scope="locale" type="boolean">
+            <name>include_header</name>
+            <label lang="de">Tracking-Code im "head"-Bereich inkludieren (Responsive Theme)</label>
+            <label lang="en">Include the tracking code in the "head" section (Responsive theme)</label>
+            <value>true</value>
+        </element>
+
+    </elements>
+</config>

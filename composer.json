@@ -1,0 +1,19 @@
+{
+    "name": "datatatrics/shopware-pixel",
+    "type": "shopware-plugin",
+    "description": "Plugin that adds the Datatrics Pixel to Shopware.",
+    "license": "MIT",
+    "extra": {
+        "installer-name": "DatatricsPixel"
+    },
+    "keywords": [
+      "shopware",
+      "datatrics",
+      "plugin",
+      "shopware-plugin"
+    ],
+    "require": {
+      "php": ">=5.6",
+      "composer/installers": "~1.0"
+    }
+}

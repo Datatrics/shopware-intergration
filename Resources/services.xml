@@ -1,0 +1,17 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="datatrics_pixel.subscriber.template_registration" class="DatatricsPixel\Subscriber\TemplateRegistration">
+            <argument>%datatrics_pixel.plugin_dir%</argument>
+            <argument type="service" id="template"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+        <service id="datatrics_pixel.subscriber.route" class="DatatricsPixel\Subscriber\RouteSubscriber">
+            <argument>%datatrics_pixel.plugin_name%</argument>
+            <argument>%datatrics_pixel.plugin_dir%</argument>
+            <argument type="service" id="shopware.plugin.cached_config_reader" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+    </services>
+</container>
