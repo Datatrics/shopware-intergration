@@ -1,5 +1,5 @@
 {
-    "name": "datatatrics/shopware-pixel",
+    "name": "datatrics/shopware-pixel",
     "type": "shopware-plugin",
     "description": "Plugin that adds the Datatrics Pixel to Shopware.",
     "license": "MIT",
